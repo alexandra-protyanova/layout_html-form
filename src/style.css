@@ -1,1 +1,8 @@
-/* styles go here */
+.main__boxes {
+  margin-bottom: 20px;
+}
+
+.each__element {
+  margin-bottom: 10px;
+  display: block;
+}
