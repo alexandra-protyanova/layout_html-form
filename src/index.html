@@ -11,7 +11,6 @@
     <link rel="stylesheet" href="./style.css">
   </head>
   <body>
-
     <script type="text/javascript" src="./main.js"></script>
     <form action="https://mate-academy-form-lesson.herokuapp.com/create-application" method="post">
       <fieldset class="main__boxes">
@@ -21,7 +20,9 @@
           <input
             type="text"
             name="surname"
-            required>
+            required
+            autocomplete="off"
+          >
         </label>
         <label class="each__element">
           Name:
@@ -29,7 +30,8 @@
             type="text"
             name="name"
             autocomplete="off"
-            required>
+            required
+          >
         </label>
         <label class="each__element">
           How old are You?
@@ -39,15 +41,24 @@
             min="1"
             max="100"
             value="12"
-            required>
+            required
+          >
         </label>
         <label class="each__element">
           Full date of birth:
-          <input type="date" name="birth_date" required>
+          <input
+            type="date"
+            name="birth_date"
+            required
+          >
         </label>
         <label>
           I accept the term of the agreement
-          <input type="checkbox" name="terms" required>
+          <input
+            type="checkbox"
+            name="terms"
+            required
+          >
         </label>
       </fieldset>
       <fieldset class="main__boxes">
@@ -58,8 +69,8 @@
             type="email"
             name="email"
             placeholder="email@example.com"
-            autocomplete="off"
-            required>
+            required
+          >
         </label>
         <label>
           Password:
@@ -68,17 +79,27 @@
             name="password"
             minlength="5"
             maxlength="32"
-            autocomplete="off"
-            required>
+            required
+          >
         </label>
       </fieldset>
       <fieldset class="main__boxes">
         <legend>An interesting fact about you!</legend>
-        <label class="each__element">
+        <label class="each__element inl">
           Do you love cats?
-          <input type="radio" name="cat__lovers" value="yes">
+          <input
+            type="radio"
+            name="cat__lovers"
+            value="yes"
+          >
           Yes
-          <input type="radio" name="cat__lovers" value="no">
+        </label>
+        <label class="each__element inl">
+          <input
+            type="radio"
+            name="cat__lovers"
+            value="no"
+          >
           No
         </label>
         <label class="each__element">
@@ -99,7 +120,11 @@
         </label>
         <label>
           How do you rate our work?
-          <input type="range" name="our_work" value="0">
+          <input
+            type="range"
+            name="our_work"
+            value="0"
+          >
         </label>
       </fieldset>
       <fieldset class="main__boxes">
@@ -117,7 +142,11 @@
         </label>
       </fieldset>
       <label class="main__boxes">
-        <input type="submit" value="Submit" name="submit">
+        <input
+          type="submit"
+          value="Submit"
+          name="submit"
+        >
       </label>
     </form>
   </body>
